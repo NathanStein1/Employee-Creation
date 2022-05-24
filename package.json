@@ -1,0 +1,23 @@
+{
+  "name": "employee-creation",
+  "version": "1.0.0",
+  "description": "Employee Card",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanStein1/Employee-Creation.git"
+  },
+  "author": "Nathan Stein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NathanStein1/Employee-Creation/issues"
+  },
+  "homepage": "https://github.com/NathanStein1/Employee-Creation#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^28.1.0"
+  }
+}

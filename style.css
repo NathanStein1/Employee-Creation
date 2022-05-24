@@ -1,0 +1,68 @@
+header {
+    background-color: rgb(219, 184, 107);
+    color: white;
+    font-size: xx-large;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+/* space between */
+
+.cardbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardManage {
+    width: 170px;
+    margin: 10px;
+    border: 2px;
+    border-style: solid;
+}
+
+.card {
+    width: 170px;
+    margin: 10px;
+    border: 2px;
+    border-style: solid;
+}
+
+.head {
+    background-color: blue;
+    color: white;
+}
+
+
+
+
+
+/* Template lit, just a storage place */
+
+/* <div class="cardManage">
+<div class="head">
+<div class="name">Bryan</div>
+<div class="role">Manager</div>
+</div>
+<div class="details">
+    <div class="idnum">ID: 3</div>
+    <div class="email">ryanbot@email.com</div>
+    <div class="office">Room num: 1</div>
+</div>
+
+</div>
+
+<div class="card">
+<div class="head">
+<div class="name">Ryan</div>
+<div class="role">Intern</div>
+</div>
+<div class="details">
+    <div class="idnum">ID: 3</div>
+    <div class="email">ryanbot@email.com</div>
+    <div class="github">github/ryantheman.com</div>
+</div>
+
+</div> */
