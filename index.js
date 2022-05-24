@@ -1,7 +1,10 @@
 const inquirer = require("inquirer")
 
 const fs = require('fs')
-
+const Employee = require('./lib/Employee')
+const Manager = require('./lib/Manager')
+const Engineer = require('./lib/Engineer')
+const Intern = require('./lib/intern')
 
     // Begin inquierer prompts
     // .THEN, create child element and append it to the cardbox div, use flex properties and padding in css
@@ -9,11 +12,7 @@ const fs = require('fs')
 
 inquirer
     .prompt([
-        {
-            type: 'input',
-            message: 'Name?',
-            name: 'name',
-        },
+
         {
             type: 'list',
             message: 'Role?',
@@ -22,9 +21,16 @@ inquirer
         },
         {
             type: 'input',
+            message: 'Name?',
+            name: 'name',
+        },
+
+        {
+            type: 'input',
             message: 'ID number?',
             name: 'id',
         },
+        // Ask what role, then I get the boilerplante name, etc, 2nd prompt gets unique information
         {
             type: 'input',
             message: 'What is your email?',
@@ -39,6 +45,11 @@ inquirer
             type: 'input',
             message: 'Github?',
             name: 'github',
+        },
+        {
+            type: 'input',
+            message: 'School?',
+            name: 'school',
         },
     ])
     // We promise there is a response, then once we get it, we can use that information to create a card
@@ -64,9 +75,24 @@ inquirer
         }
 
 
-        let creation = () => {
+    let creation = () => {
             // Store items in an array, grab items and append them to the parent element, make new divs
             }
     
 
+
+
+
+
 // Make classes, put the classes into [...array] create class via constructor
+
+// function create manager,
+
+// function create team,
+
+// inquierer {
+
+//     addEngineer
+//     addIntern
+//     switch SVGPatternElement
+// }
