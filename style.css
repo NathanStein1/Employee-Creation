@@ -35,34 +35,7 @@ header {
     color: white;
 }
 
-
-
-
-
-/* Template lit, just a storage place */
-
-/* <div class="cardManage">
-<div class="head">
-<div class="name">Bryan</div>
-<div class="role">Manager</div>
-</div>
-<div class="details">
-    <div class="idnum">ID: 3</div>
-    <div class="email">ryanbot@email.com</div>
-    <div class="office">Room num: 1</div>
-</div>
-
-</div>
-
-<div class="card">
-<div class="head">
-<div class="name">Ryan</div>
-<div class="role">Intern</div>
-</div>
-<div class="details">
-    <div class="idnum">ID: 3</div>
-    <div class="email">ryanbot@email.com</div>
-    <div class="github">github/ryantheman.com</div>
-</div>
-
-</div> */
+.testzone{
+    font-size: xx-large;
+    font-weight: bold;
+}
