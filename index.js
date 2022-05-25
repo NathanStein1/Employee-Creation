@@ -11,7 +11,76 @@ const fs = require('fs')
 
 
 
-// Need to add a function that pushes the responses from the prompts into a the class array
+// Need to add a function that pushes the responses from the prompts into a the class array, then run printerTest, which creates our html file and prints the correct responses (enginier[1].response.name etc)
+function printerTest() {
+
+    fs.writeFile('index.html', `<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./style.css">
+        <title>My Team</title>
+    </head>
+    <body>
+        <header>
+            My Team
+        </header>
+    
+        <main>
+            
+    
+                <div class="cardbox">
+    
+    
+                    <div class="cardManage">
+                        <div class="head">
+                        <div class="name">Bryan</div>
+                        <div class="role">Manager</div>
+                        </div>
+                        <div class="details">
+                            <div class="idnum">ID: 3</div>
+                            <div class="email">ryanbot@email.com</div>
+                            <div class="office">Room num: 1</div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="card">
+                        <div class="head">
+                        <div class="name">Ryan</div>
+                        <div class="role">Intern</div>
+                        </div>
+                        <div class="details">
+                            <div class="idnum">ID: 3</div>
+                            <div class="email">ryanbot@email.com</div>
+                            <div class="github">github/ryantheman.com</div>
+                        </div>
+    
+                    </div>
+    
+    <div class="testzone">
+    </div>
+    
+    
+                </div>
+            
+    
+        </main>
+    
+        <script src="./index.js"></script>
+    </body>
+    
+    </html>`,
+        (err) =>
+            err ? console.error(err) : console.log('Commit Logged!'));
+}
+
+
+
+
 
 // CREATES THE INTERN
 
@@ -108,8 +177,9 @@ function createTeam() {
             if (response.moreEmployee == 'Intern'){
                 createIntern()
             }
-            else{
+            if (response.moreEmployee == 'No thanks'){
                 console.log('Finished')
+                printerTest()
             }
         });
 
@@ -255,71 +325,7 @@ createManager()
 
 // CODE WE DON"T NEED YET/ANYMORE. Reference
 
-function printerTest() {
 
-    fs.writeFile('index.html', `<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./reset.css">
-        <link rel="stylesheet" href="./style.css">
-        <title>My Team</title>
-    </head>
-    <body>
-        <header>
-            My Team
-        </header>
-    
-        <main>
-            
-    
-                <div class="cardbox">
-    
-    
-                    <div class="cardManage">
-                        <div class="head">
-                        <div class="name">Bryan</div>
-                        <div class="role">Manager</div>
-                        </div>
-                        <div class="details">
-                            <div class="idnum">ID: 3</div>
-                            <div class="email">ryanbot@email.com</div>
-                            <div class="office">Room num: 1</div>
-                        </div>
-    
-                    </div>
-    
-                    <div class="card">
-                        <div class="head">
-                        <div class="name">Ryan</div>
-                        <div class="role">Intern</div>
-                        </div>
-                        <div class="details">
-                            <div class="idnum">ID: 3</div>
-                            <div class="email">ryanbot@email.com</div>
-                            <div class="github">github/ryantheman.com</div>
-                        </div>
-    
-                    </div>
-    
-    <div class="testzone">
-    </div>
-    
-    
-                </div>
-            
-    
-        </main>
-    
-        <script src="./index.js"></script>
-    </body>
-    
-    </html>`,
-        (err) =>
-            err ? console.error(err) : console.log('Commit Logged!'));
-}
 
 
 
