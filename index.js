@@ -2,7 +2,7 @@ const inquirer = require("inquirer")
 
 const fs = require('fs')
 // const Employee = require('./lib/Employee')
-// const Manager = require('./lib/Manager')
+const Manager = require('./lib/Manager')
 // const Engineer = require('./lib/Engineer')
 // const Intern = require('./lib/intern')
 
@@ -192,30 +192,31 @@ function createManager() {
         {
             type: 'input',
             message: 'Name?',
-            name: 'name',
+            name: 'manageName',
         },
 
         {
             type: 'input',
             message: 'ID number?',
-            name: 'id',
+            name: 'manageId',
         },
 
         {
             type: 'input',
             message: 'What is your email?',
-            name: 'email',
+            name: 'manageEmail',
         },
 
         {
 
             type: 'input',
             message: 'Office Number?',
-            name: 'office',
+            name: 'manageOffice',
         },
     ])
         .then((response) => {
             console.log(response)
+            const manager = new Manager (response.manageName, response.manageId, response.manageEmail, response.manageOffice)
             createTeam()
         })
 
