@@ -8,20 +8,16 @@ header {
 }
 
 
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /* space between */
 
-.cardbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.cardManage {
-    width: 170px;
-    margin: 10px;
-    border: 2px;
-    border-style: solid;
-}
 
 .card {
     width: 170px;
@@ -35,7 +31,3 @@ header {
     color: white;
 }
 
-.testzone{
-    font-size: xx-large;
-    font-weight: bold;
-}

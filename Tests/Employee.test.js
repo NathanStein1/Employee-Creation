@@ -1,24 +1,10 @@
-// If email === response.email, pass
+// TEST ENVIROMENT FOR EMPLOYEE CLASS
+
+
+
+
 const Employee = require('../lib/Employee');
 
-
-
-
-// getName() {
-//     return this.name;
-// }
-
-// getId() {
-//     return this.id;
-// }
-
-// getEmail(){
-//     return this.email;
-// }
-
-// getRole () {
-//     return "Employee";
-// }
 
 
 test('This is the test if the emails match', ()=> {
@@ -34,4 +20,20 @@ test('This is the test if the Names match', ()=> {
     let testName = "Jennifer";
     let newEmp = new Employee('Jennifer', null, null)
     expect(newEmp.getName()).toBe(testName)
+})
+
+
+test('This is the test if the role match', ()=> {
+
+    let testRole = "Employee";
+    let newEmp = new Employee(null, null, null)
+    expect(newEmp.getRole()).toBe(testRole)
+})
+
+
+test('This is the test if the ID match', ()=> {
+
+    let testId = 3;
+    let newEmp = new Employee(null, 3, null)
+    expect(newEmp.getId()).toBe(testId)
 })

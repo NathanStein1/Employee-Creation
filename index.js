@@ -180,7 +180,7 @@ function createTeam() {
                 createIntern()
             }
             if (response.moreEmployee == 'No thanks'){
-                console.log('Finished')
+                console.log(Employees)
                 printerTest()
             }
         });
@@ -193,7 +193,7 @@ function createManager() {
 
         {
             type: 'input',
-            message: 'Name?',
+            message: 'Hello Glorious Leader, may I have your name?',
             name: 'manageName',
         },
 
@@ -227,162 +227,3 @@ function createManager() {
 }
 
 createManager()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// CODE WE DON"T NEED YET/ANYMORE. Reference
-
-
-
-
-
-
-
-// inquirer
-//     .prompt([
-
-//         {
-//             type: 'list',
-//             message: 'Role?',
-//             name: 'role',
-//             choices: ['Manager', 'Employee', 'Engineer', 'Intern']
-//         },
-//         {
-//             type: 'input',
-//             message: 'Name?',
-//             name: 'name',
-//         },
-
-//         {
-//             type: 'input',
-//             message: 'ID number?',
-//             name: 'id',
-//         },
-
-//         {
-//             type: 'input',
-//             message: 'What is your email?',
-//             name: 'email',
-//         },
-//         {
-//             type: 'input',
-//             message: 'Room number?',
-//             name: 'room',
-//         },
-//         {
-//             type: 'input',
-//             message: 'Github?',
-//             name: 'github',
-//         },
-//         {
-//             type: 'input',
-//             message: 'School?',
-//             name: 'school',
-//         },
-//     ])
-//     // We promise there is a response, then once we get it, we can use that information to create a card
-//     .then((response) => {
-//         console.log(response)
-
-// // We are using the file system to create a new file that will contain all the information we need
-//         fs.writeFile('firstprompt.md', `${response.name}\n ${response.role}\n ${response.id}\n ${response.email}\n ${response.room}\n ${response.github}\n`,
-//             (err) =>
-//                 err ? console.error(err) : console.log('Commit logged!'));
-
-
-//     });
