@@ -1,17 +1,15 @@
 const inquirer = require("inquirer")
-
 const fs = require('fs')
 const Employee = require('./lib/Employee')
 const Manager = require('./lib/Manager')
 const Engineer = require('./lib/Engineer')
 const Intern = require('./lib/intern')
 
-// Begin inquierer prompts
-// .THEN, create child element and append it to the cardbox div, use flex properties and padding in css
+// Array to push responses
 
 const Employees = []
 
-// Need to add a function that pushes the responses from the prompts into a the class array, then run printerTest, which creates our html file and prints the correct responses (enginier[1].response.name etc)
+// Prints the html page
 function printerTest() {
 
     let empHTML = " ";
@@ -159,7 +157,7 @@ function createEngineer() {
         })
 }
 
-
+// Prompts for more cards
 function createTeam() {
     inquirer.prompt([
         {
@@ -187,6 +185,7 @@ function createTeam() {
 
 }
 
+// Initial Prompts
 function createManager() {
 
     inquirer.prompt([
@@ -225,5 +224,5 @@ function createManager() {
 
 
 }
-
+// Begins Code
 createManager()

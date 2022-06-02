@@ -1,4 +1,4 @@
-// If email === response.email, pass
+// Test for Manager
 
 
 const Manager = require('../lib/Manager');

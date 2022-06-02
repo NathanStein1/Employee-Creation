@@ -1,15 +1,4 @@
-// If email === response.email, pass
-
-
-// getgitHub() {
-//     return this.gitHub;
-// }
-
-// getRole () {
-//     return "Engineer";
-// }
-
-
+// Test for Engineer
 
 const Engineer = require('../lib/Engineer');
 

@@ -1,4 +1,4 @@
-// If email === response.email, pass
+// Test for Intern
 
 
 const Intern = require('../lib/intern');
